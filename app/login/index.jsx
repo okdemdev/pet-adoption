@@ -61,11 +61,7 @@ export default function LoginScreen() {
               fontSize: 20,
             }}
           >
-<<<<<<< HEAD
-            Let's start 2
-=======
-            Let's start
->>>>>>> c4808653c96caa04d1f0f3edd5c1f624d5c5f35e
+            Let's start 3
           </Text>
         </Pressable>
       </View>
