@@ -26,15 +26,14 @@ export default function Header() {
         <Text
           style={{
             fontFamily: 'poppinsMedium',
-            fontSize: 18,
-            gap: 4,
+            fontSize: 19,
           }}
         >
           Timisoara, Romania
         </Text>
       </View>
       <View>
-        <Ionicons name="search" size={32} color="black" />
+        <Ionicons name="search" size={36} color="black" />
       </View>
     </View>
   );
