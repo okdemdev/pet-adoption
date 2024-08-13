@@ -1,6 +1,6 @@
 import { View, Text, Image, Pressable } from 'react-native';
 import React from 'react';
-import Colors from './../../constants/Colors';
+import Colors from '@/constants/Colors';
 
 export default function LoginScreen() {
   return (
@@ -44,6 +44,7 @@ export default function LoginScreen() {
           Let's adopt a pet which you like and make their life happy
         </Text>
         <Pressable
+          href="/home"
           style={{
             padding: 14,
             marginTop: 50,
@@ -56,11 +57,11 @@ export default function LoginScreen() {
             style={{
               textAlign: 'center',
               color: 'white',
-              fontFamily: 'poppins-medium',
+              fontFamily: 'poppinsMedium',
               fontSize: 20,
             }}
           >
-            Get Started
+            Let's start
           </Text>
         </Pressable>
       </View>
