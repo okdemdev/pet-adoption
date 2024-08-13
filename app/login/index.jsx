@@ -61,7 +61,7 @@ export default function LoginScreen() {
               fontSize: 20,
             }}
           >
-            Let's start
+            Let's start 2
           </Text>
         </Pressable>
       </View>
