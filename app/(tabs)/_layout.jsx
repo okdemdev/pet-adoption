@@ -15,9 +15,7 @@ export default function TabLayout() {
         options={{
           title: 'Home',
           headerShown: false,
-          tabBarIcon: ({ color }) => (
-            <Ionicons name="home" size={24} color={color} />
-          ),
+          tabBarIcon: ({ color }) => <Ionicons name="home" size={24} color={color} />,
         }}
       />
       <Tabs.Screen
@@ -25,9 +23,15 @@ export default function TabLayout() {
         options={{
           title: 'Favorites',
           headerShown: false,
-          tabBarIcon: ({ color }) => (
-            <Ionicons name="heart" size={24} color={color} />
-          ),
+          tabBarIcon: ({ color }) => <Ionicons name="heart" size={24} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="addpet"
+        options={{
+          title: 'Add a new pet',
+          headerShown: false,
+          tabBarIcon: ({ color }) => <Ionicons name="add-circle" size={24} color={color} />,
         }}
       />
     </Tabs>

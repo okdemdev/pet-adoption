@@ -5,7 +5,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { FlatList } from 'react-native';
 import Colors from '@/constants/Colors';
 
-export default function Category() {
+export default function Category({ category }) {
   const [categoryList, setCategoryList] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('Dogs');
 
@@ -50,7 +50,12 @@ export default function Category() {
           const isSelected = selectedCategory === item.name;
 
           return (
-            <TouchableOpacity onPress={() => handleCategorySelect(item.name)}>
+            <TouchableOpacity
+              onPress={() => {
+                handleCategorySelect(item.name);
+                category(item.name);
+              }}
+            >
               <View
                 style={{
                   display: 'flex',
